@@ -1,0 +1,1288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A762A79E18EDDF84009E858A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A762A79D18EDDF84009E858A /* Foundation.framework */; };
+		A762A7A018EDDF84009E858A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A762A79F18EDDF84009E858A /* CoreGraphics.framework */; };
+		A762A7A218EDDF84009E858A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A762A7A118EDDF84009E858A /* UIKit.framework */; };
+		A762A7A818EDDF84009E858A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A762A7A618EDDF84009E858A /* InfoPlist.strings */; };
+		A762A7AA18EDDF84009E858A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A7A918EDDF84009E858A /* main.m */; };
+		A762A7AE18EDDF84009E858A /* HokutosaiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A7AD18EDDF84009E858A /* HokutosaiAppDelegate.m */; };
+		A762A7B118EDDF84009E858A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A762A7AF18EDDF84009E858A /* Main.storyboard */; };
+		A762A7B918EDDF84009E858A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A762A7B818EDDF84009E858A /* Images.xcassets */; };
+		A762A7C018EDDF84009E858A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A762A7BF18EDDF84009E858A /* XCTest.framework */; };
+		A762A7C118EDDF84009E858A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A762A79D18EDDF84009E858A /* Foundation.framework */; };
+		A762A7C218EDDF84009E858A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A762A7A118EDDF84009E858A /* UIKit.framework */; };
+		A762A7CA18EDDF84009E858A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A762A7C818EDDF84009E858A /* InfoPlist.strings */; };
+		A762A7CC18EDDF84009E858A /* HokutosaiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A7CB18EDDF84009E858A /* HokutosaiTests.m */; };
+		A762A7F918EDEC68009E858A /* HokutosaiNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A7F818EDEC68009E858A /* HokutosaiNewsViewController.m */; };
+		A762A7FC18EDECA1009E858A /* HokutosaiTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A7FB18EDECA1009E858A /* HokutosaiTwitterViewController.m */; };
+		A762A80218EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A80118EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m */; };
+		A762A80518EDED13009E858A /* HokutosaiContestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A80418EDED13009E858A /* HokutosaiContestsViewController.m */; };
+		A7ADDBE518EEBBAD00ECE3C8 /* HokutosaiSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADDBE418EEBBAD00ECE3C8 /* HokutosaiSwipeView.m */; };
+		A7ADDBE918EEBBF800ECE3C8 /* HokutosaiSwipeBord.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADDBE818EEBBF800ECE3C8 /* HokutosaiSwipeBord.m */; };
+		A7ADDBEC18EEBCA200ECE3C8 /* HokutosaiUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADDBEB18EEBCA200ECE3C8 /* HokutosaiUIColor.m */; };
+		A7ADDBF618EF2F7400ECE3C8 /* HokutosaiNewsTopicsBordContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADDBF518EF2F7400ECE3C8 /* HokutosaiNewsTopicsBordContent.m */; };
+		A7AE332C190F8EEC00BB265E /* HokutosaiStackPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE332B190F8EEC00BB265E /* HokutosaiStackPanelView.m */; };
+		A7AE3332190FEA8300BB265E /* HokutosaiDateConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE3331190FEA8300BB265E /* HokutosaiDateConvert.m */; };
+		A7AE33371911210000BB265E /* HokutosaiSchedulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE33361911210000BB265E /* HokutosaiSchedulesViewController.m */; };
+		A7AE33411911399A00BB265E /* HokutosaiOthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE33401911399A00BB265E /* HokutosaiOthersViewController.m */; };
+		A7AE33441911B1ED00BB265E /* HokutosaiCopyrightInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE33431911B1ED00BB265E /* HokutosaiCopyrightInformationViewController.m */; };
+		A7AE33471911B37C00BB265E /* copyrights.txt in Resources */ = {isa = PBXBuildFile; fileRef = A7AE33461911B37C00BB265E /* copyrights.txt */; };
+		A7AE335919124CA000BB265E /* HokutosaiSchedulesTimeAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE335819124CA000BB265E /* HokutosaiSchedulesTimeAxis.m */; };
+		A7AE336819137E7100BB265E /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = A7AE336619137E7100BB265E /* other.png */; };
+		A7AE336C1913861F00BB265E /* HokutosaiSchedulesTimetableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE336B1913861F00BB265E /* HokutosaiSchedulesTimetableItem.m */; };
+		A7B54D691913F01900113E6F /* clock_white.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B54D681913F01900113E6F /* clock_white.png */; };
+		A7B54D73191515F600113E6F /* TRY.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B54D72191515F600113E6F /* TRY.png */; };
+		A7B54D791915497300113E6F /* HokutosaiURLImagesDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D781915497300113E6F /* HokutosaiURLImagesDictionary.m */; };
+		A7B54D7D191559D400113E6F /* HokutosaiEventsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D7C191559D400113E6F /* HokutosaiEventsDetailViewController.m */; };
+		A7B54D841915709800113E6F /* HokutosaiTaggedTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D831915709800113E6F /* HokutosaiTaggedTapGestureRecognizer.m */; };
+		A7B54D871917D53200113E6F /* HokutosaiApiRequestTasksQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D861917D53200113E6F /* HokutosaiApiRequestTasksQueue.m */; };
+		A7B54D8E191936E600113E6F /* HokutosaiShopsAndExhibitionsHeadInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D8D191936E600113E6F /* HokutosaiShopsAndExhibitionsHeadInfoView.m */; };
+		A7B54D9119194AAE00113E6F /* HokutosaiExhibitionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D9019194AAE00113E6F /* HokutosaiExhibitionDetailViewController.m */; };
+		A7B54D9419195F8200113E6F /* HokutosaiShopsAssessView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D9319195F8200113E6F /* HokutosaiShopsAssessView.m */; };
+		A7B54D971919779600113E6F /* HokutosaiShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D961919779600113E6F /* HokutosaiShopDetailViewController.m */; };
+		A7B54D99191BCDF100113E6F /* noimage_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B54D98191BCDF100113E6F /* noimage_1.png */; };
+		A7B54D9D191DF49F00113E6F /* HokutosaiContestsEntrysTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54D9B191DF49F00113E6F /* HokutosaiContestsEntrysTableViewCell.m */; };
+		A7B54DA0191EA48300113E6F /* crown_60.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B54D9F191EA48300113E6F /* crown_60.png */; };
+		A7B54DA3191EC52200113E6F /* HokutosaiContestsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54DA2191EC52200113E6F /* HokutosaiContestsTableViewCell.m */; };
+		A7B54DAA191F42D500113E6F /* HokutosaiContestsEntrysListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54DA9191F42D500113E6F /* HokutosaiContestsEntrysListViewController.m */; };
+		A7B54DAD191F6B9B00113E6F /* HokutosaiContestsEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54DAC191F6B9B00113E6F /* HokutosaiContestsEntryDetailViewController.m */; };
+		A7B54DB01921326200113E6F /* HokutosaiEventsNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54DAF1921326200113E6F /* HokutosaiEventsNotification.m */; };
+		A7B54DB51923A1CA00113E6F /* HokutosaiMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B54DB41923A1CA00113E6F /* HokutosaiMapsViewController.m */; };
+		A7B5DB671925164800EA73CE /* map1.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B5DB661925164800EA73CE /* map1.png */; };
+		A7B5DB6A1925173800EA73CE /* map2.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B5DB681925173800EA73CE /* map2.png */; };
+		A7B5DB6B1925173800EA73CE /* map3.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B5DB691925173800EA73CE /* map3.png */; };
+		A7B61B46190CFD1900C93E31 /* HokutosaiURLImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B61B45190CFD1900C93E31 /* HokutosaiURLImageDownloader.m */; };
+		A7B61B4D190D0E8A00C93E31 /* HokutosaiURLImagesCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B61B4C190D0E8A00C93E31 /* HokutosaiURLImagesCache.m */; };
+		A7B6BF3618F060E1004B53BB /* HokutosaiNewsTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B6BF3518F060E1004B53BB /* HokutosaiNewsTimelineView.m */; };
+		A7B6BF3918F06183004B53BB /* HokutosaiNewsTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B6BF3818F06183004B53BB /* HokutosaiNewsTimelineCell.m */; };
+		A7B6BF4018F14EC6004B53BB /* HokutosaiShopsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B6BF3F18F14EC6004B53BB /* HokutosaiShopsTableViewCell.m */; };
+		A7B6BF4218F15143004B53BB /* HokutosaiShopsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B6BF4118F15143004B53BB /* HokutosaiShopsTableViewCell.xib */; };
+		A7CCDFFC18FD8924000250D0 /* HokutosaiUIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCDFFB18FD8924000250D0 /* HokutosaiUIUtility.m */; };
+		A7CCE00B18FEB009000250D0 /* HokutosaiShopsMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE00A18FEB009000250D0 /* HokutosaiShopsMenuItem.m */; };
+		A7CCE01419000B57000250D0 /* HokutosaiShopsAssessStarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE01319000B57000250D0 /* HokutosaiShopsAssessStarButton.m */; };
+		A7CCE01719000FCB000250D0 /* HokutosaiShopsAssessByMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE01619000FCB000250D0 /* HokutosaiShopsAssessByMeView.m */; };
+		A7CCE01B1902416A000250D0 /* HokutosaiTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE01A1902416A000250D0 /* HokutosaiTimer.m */; };
+		A7CCE0271903C1C2000250D0 /* HokutosaiHeaderedContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE0261903C1C2000250D0 /* HokutosaiHeaderedContentView.m */; };
+		A7CCE02A1903D4F1000250D0 /* HokutosaiHeaderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE0291903D4F1000250D0 /* HokutosaiHeaderedLabel.m */; };
+		A7CCE02D1903D5D8000250D0 /* HokutosaiStackPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE02C1903D5D8000250D0 /* HokutosaiStackPanel.m */; };
+		A7CCE033190566A7000250D0 /* HokutosaiStackPanelScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE032190566A7000250D0 /* HokutosaiStackPanelScrollView.m */; };
+		A7CCE0361907C36D000250D0 /* HokutosaiStreamingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE0351907C36D000250D0 /* HokutosaiStreamingLabel.m */; };
+		A7CCE07D190A9D4E000250D0 /* HokutosaiWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE07C190A9D4E000250D0 /* HokutosaiWebViewController.m */; };
+		A7CCE081190B7D5E000250D0 /* HokutosaiLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CCE080190B7D5E000250D0 /* HokutosaiLoadingView.m */; };
+		A7D0623618F5AD8A00578E01 /* HokutosaiURLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0623518F5AD8A00578E01 /* HokutosaiURLUtility.m */; };
+		A7D0623918F5ADB300578E01 /* HokutosaiApiGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0623818F5ADB300578E01 /* HokutosaiApiGetRequest.m */; };
+		A7D0623C18F5ADCF00578E01 /* HokutosaiApiPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0623B18F5ADCF00578E01 /* HokutosaiApiPostRequest.m */; };
+		A7D0624A18FA35F300578E01 /* HokutosaiApiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0624918FA35F300578E01 /* HokutosaiApiRequest.m */; };
+		A7D0624D18FA4D3B00578E01 /* HokutosaiApiRequestDemander.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0624C18FA4D3B00578E01 /* HokutosaiApiRequestDemander.m */; };
+		A7D0625318FA9F3400578E01 /* HokutosaiApiRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0625218FA9F3400578E01 /* HokutosaiApiRequestParameters.m */; };
+		A7D0625B18FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0625918FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.m */; };
+		A7D0625C18FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0625A18FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.xib */; };
+		A7D4E8C4190D5945001F1AA7 /* star_fill.bmp in Resources */ = {isa = PBXBuildFile; fileRef = A7D4E8C2190D5945001F1AA7 /* star_fill.bmp */; };
+		A7D4E8C5190D5945001F1AA7 /* star_frame.bmp in Resources */ = {isa = PBXBuildFile; fileRef = A7D4E8C3190D5945001F1AA7 /* star_frame.bmp */; };
+		A7D4E8CF190D7ADC001F1AA7 /* HokutosaiNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D4E8CE190D7ADC001F1AA7 /* HokutosaiNewsDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A762A7C318EDDF84009E858A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A762A79218EDDF84009E858A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A762A79918EDDF84009E858A;
+			remoteInfo = Hokutosai;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A762A79A18EDDF84009E858A /* hokutosai2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hokutosai2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A762A79D18EDDF84009E858A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A762A79F18EDDF84009E858A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A762A7A118EDDF84009E858A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A762A7A518EDDF84009E858A /* Hokutosai-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hokutosai-Info.plist"; sourceTree = "<group>"; };
+		A762A7A718EDDF84009E858A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A762A7A918EDDF84009E858A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A762A7AB18EDDF84009E858A /* Hokutosai-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hokutosai-Prefix.pch"; sourceTree = "<group>"; };
+		A762A7AC18EDDF84009E858A /* HokutosaiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HokutosaiAppDelegate.h; sourceTree = "<group>"; };
+		A762A7AD18EDDF84009E858A /* HokutosaiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HokutosaiAppDelegate.m; sourceTree = "<group>"; };
+		A762A7B018EDDF84009E858A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A762A7B818EDDF84009E858A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A762A7BE18EDDF84009E858A /* HokutosaiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HokutosaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A762A7BF18EDDF84009E858A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A762A7C718EDDF84009E858A /* HokutosaiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HokutosaiTests-Info.plist"; sourceTree = "<group>"; };
+		A762A7C918EDDF84009E858A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A762A7CB18EDDF84009E858A /* HokutosaiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HokutosaiTests.m; sourceTree = "<group>"; };
+		A762A7F718EDEC68009E858A /* HokutosaiNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiNewsViewController.h; path = Resources/News/ViewController/HokutosaiNewsViewController.h; sourceTree = "<group>"; };
+		A762A7F818EDEC68009E858A /* HokutosaiNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiNewsViewController.m; path = Resources/News/ViewController/HokutosaiNewsViewController.m; sourceTree = "<group>"; };
+		A762A7FA18EDECA1009E858A /* HokutosaiTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiTwitterViewController.h; path = Resources/Twitter/ViewController/HokutosaiTwitterViewController.h; sourceTree = "<group>"; };
+		A762A7FB18EDECA1009E858A /* HokutosaiTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiTwitterViewController.m; path = Resources/Twitter/ViewController/HokutosaiTwitterViewController.m; sourceTree = "<group>"; };
+		A762A80018EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopsAndExhibitionsViewController.h; path = Resources/ShopsAndExhibitions/ViewController/HokutosaiShopsAndExhibitionsViewController.h; sourceTree = "<group>"; };
+		A762A80118EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsAndExhibitionsViewController.m; path = Resources/ShopsAndExhibitions/ViewController/HokutosaiShopsAndExhibitionsViewController.m; sourceTree = "<group>"; };
+		A762A80318EDED13009E858A /* HokutosaiContestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiContestsViewController.h; path = Resources/Contests/ViewController/HokutosaiContestsViewController.h; sourceTree = "<group>"; };
+		A762A80418EDED13009E858A /* HokutosaiContestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiContestsViewController.m; path = Resources/Contests/ViewController/HokutosaiContestsViewController.m; sourceTree = "<group>"; };
+		A7ADDBE318EEBBAD00ECE3C8 /* HokutosaiSwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiSwipeView.h; path = "Resources/Common/User Interface/View/HokutosaiSwipeView.h"; sourceTree = "<group>"; };
+		A7ADDBE418EEBBAD00ECE3C8 /* HokutosaiSwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiSwipeView.m; path = "Resources/Common/User Interface/View/HokutosaiSwipeView.m"; sourceTree = "<group>"; };
+		A7ADDBE718EEBBF800ECE3C8 /* HokutosaiSwipeBord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiSwipeBord.h; path = "Resources/Common/User Interface/View/HokutosaiSwipeBord.h"; sourceTree = "<group>"; };
+		A7ADDBE818EEBBF800ECE3C8 /* HokutosaiSwipeBord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiSwipeBord.m; path = "Resources/Common/User Interface/View/HokutosaiSwipeBord.m"; sourceTree = "<group>"; };
+		A7ADDBEA18EEBCA200ECE3C8 /* HokutosaiUIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiUIColor.h; path = "Resources/Common/User Interface/Utility/HokutosaiUIColor.h"; sourceTree = "<group>"; };
+		A7ADDBEB18EEBCA200ECE3C8 /* HokutosaiUIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiUIColor.m; path = "Resources/Common/User Interface/Utility/HokutosaiUIColor.m"; sourceTree = "<group>"; };
+		A7ADDBF418EF2F7400ECE3C8 /* HokutosaiNewsTopicsBordContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiNewsTopicsBordContent.h; path = Resources/News/View/HokutosaiNewsTopicsBordContent.h; sourceTree = "<group>"; };
+		A7ADDBF518EF2F7400ECE3C8 /* HokutosaiNewsTopicsBordContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiNewsTopicsBordContent.m; path = Resources/News/View/HokutosaiNewsTopicsBordContent.m; sourceTree = "<group>"; };
+		A7AE332A190F8EEC00BB265E /* HokutosaiStackPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiStackPanelView.h; path = "Resources/Common/User Interface/View/HokutosaiStackPanelView.h"; sourceTree = "<group>"; };
+		A7AE332B190F8EEC00BB265E /* HokutosaiStackPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiStackPanelView.m; path = "Resources/Common/User Interface/View/HokutosaiStackPanelView.m"; sourceTree = "<group>"; };
+		A7AE3330190FEA8300BB265E /* HokutosaiDateConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiDateConvert.h; path = Resources/Common/Utility/HokutosaiDateConvert.h; sourceTree = "<group>"; };
+		A7AE3331190FEA8300BB265E /* HokutosaiDateConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiDateConvert.m; path = Resources/Common/Utility/HokutosaiDateConvert.m; sourceTree = "<group>"; };
+		A7AE33351911210000BB265E /* HokutosaiSchedulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiSchedulesViewController.h; path = Resources/Events/ViewController/HokutosaiSchedulesViewController.h; sourceTree = "<group>"; };
+		A7AE33361911210000BB265E /* HokutosaiSchedulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiSchedulesViewController.m; path = Resources/Events/ViewController/HokutosaiSchedulesViewController.m; sourceTree = "<group>"; };
+		A7AE333F1911399A00BB265E /* HokutosaiOthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiOthersViewController.h; path = Resources/Others/ViewController/HokutosaiOthersViewController.h; sourceTree = "<group>"; };
+		A7AE33401911399A00BB265E /* HokutosaiOthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiOthersViewController.m; path = Resources/Others/ViewController/HokutosaiOthersViewController.m; sourceTree = "<group>"; };
+		A7AE33421911B1ED00BB265E /* HokutosaiCopyrightInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiCopyrightInformationViewController.h; path = Resources/Others/ViewController/HokutosaiCopyrightInformationViewController.h; sourceTree = "<group>"; };
+		A7AE33431911B1ED00BB265E /* HokutosaiCopyrightInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiCopyrightInformationViewController.m; path = Resources/Others/ViewController/HokutosaiCopyrightInformationViewController.m; sourceTree = "<group>"; };
+		A7AE33461911B37C00BB265E /* copyrights.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyrights.txt; sourceTree = "<group>"; };
+		A7AE335719124CA000BB265E /* HokutosaiSchedulesTimeAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiSchedulesTimeAxis.h; path = Resources/Events/Schedules/View/HokutosaiSchedulesTimeAxis.h; sourceTree = "<group>"; };
+		A7AE335819124CA000BB265E /* HokutosaiSchedulesTimeAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiSchedulesTimeAxis.m; path = Resources/Events/Schedules/View/HokutosaiSchedulesTimeAxis.m; sourceTree = "<group>"; };
+		A7AE336619137E7100BB265E /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
+		A7AE336A1913861F00BB265E /* HokutosaiSchedulesTimetableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiSchedulesTimetableItem.h; path = Resources/Events/Schedules/View/HokutosaiSchedulesTimetableItem.h; sourceTree = "<group>"; };
+		A7AE336B1913861F00BB265E /* HokutosaiSchedulesTimetableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiSchedulesTimetableItem.m; path = Resources/Events/Schedules/View/HokutosaiSchedulesTimetableItem.m; sourceTree = "<group>"; };
+		A7B54D681913F01900113E6F /* clock_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_white.png; sourceTree = "<group>"; };
+		A7B54D72191515F600113E6F /* TRY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TRY.png; sourceTree = "<group>"; };
+		A7B54D771915497300113E6F /* HokutosaiURLImagesDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiURLImagesDictionary.h; path = Resources/Common/Web/HokutosaiURLImagesDictionary.h; sourceTree = "<group>"; };
+		A7B54D781915497300113E6F /* HokutosaiURLImagesDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiURLImagesDictionary.m; path = Resources/Common/Web/HokutosaiURLImagesDictionary.m; sourceTree = "<group>"; };
+		A7B54D7B191559D400113E6F /* HokutosaiEventsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiEventsDetailViewController.h; path = Resources/Events/Detail/ViewController/HokutosaiEventsDetailViewController.h; sourceTree = "<group>"; };
+		A7B54D7C191559D400113E6F /* HokutosaiEventsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiEventsDetailViewController.m; path = Resources/Events/Detail/ViewController/HokutosaiEventsDetailViewController.m; sourceTree = "<group>"; };
+		A7B54D821915709800113E6F /* HokutosaiTaggedTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiTaggedTapGestureRecognizer.h; path = "Resources/Common/User Interface/Gesture/HokutosaiTaggedTapGestureRecognizer.h"; sourceTree = "<group>"; };
+		A7B54D831915709800113E6F /* HokutosaiTaggedTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiTaggedTapGestureRecognizer.m; path = "Resources/Common/User Interface/Gesture/HokutosaiTaggedTapGestureRecognizer.m"; sourceTree = "<group>"; };
+		A7B54D851917D53200113E6F /* HokutosaiApiRequestTasksQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiApiRequestTasksQueue.h; path = "Resources/Common/Hokutosai API/HokutosaiApiRequestTasksQueue.h"; sourceTree = "<group>"; };
+		A7B54D861917D53200113E6F /* HokutosaiApiRequestTasksQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiApiRequestTasksQueue.m; path = "Resources/Common/Hokutosai API/HokutosaiApiRequestTasksQueue.m"; sourceTree = "<group>"; };
+		A7B54D88191880C800113E6F /* HokutosaiViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiViewControllerProtocol.h; path = "Resources/Common/User Interface/Protocol/HokutosaiViewControllerProtocol.h"; sourceTree = "<group>"; };
+		A7B54D8C191936E600113E6F /* HokutosaiShopsAndExhibitionsHeadInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopsAndExhibitionsHeadInfoView.h; path = Resources/ShopsAndExhibitions/View/HokutosaiShopsAndExhibitionsHeadInfoView.h; sourceTree = "<group>"; };
+		A7B54D8D191936E600113E6F /* HokutosaiShopsAndExhibitionsHeadInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsAndExhibitionsHeadInfoView.m; path = Resources/ShopsAndExhibitions/View/HokutosaiShopsAndExhibitionsHeadInfoView.m; sourceTree = "<group>"; };
+		A7B54D8F19194AAE00113E6F /* HokutosaiExhibitionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiExhibitionDetailViewController.h; path = Resources/ShopsAndExhibitions/Exhibitions/ViewController/HokutosaiExhibitionDetailViewController.h; sourceTree = "<group>"; };
+		A7B54D9019194AAE00113E6F /* HokutosaiExhibitionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiExhibitionDetailViewController.m; path = Resources/ShopsAndExhibitions/Exhibitions/ViewController/HokutosaiExhibitionDetailViewController.m; sourceTree = "<group>"; };
+		A7B54D9219195F8200113E6F /* HokutosaiShopsAssessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopsAssessView.h; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsAssessView.h; sourceTree = "<group>"; };
+		A7B54D9319195F8200113E6F /* HokutosaiShopsAssessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsAssessView.m; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsAssessView.m; sourceTree = "<group>"; };
+		A7B54D951919779600113E6F /* HokutosaiShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopDetailViewController.h; path = Resources/ShopsAndExhibitions/Shops/ViewController/HokutosaiShopDetailViewController.h; sourceTree = "<group>"; };
+		A7B54D961919779600113E6F /* HokutosaiShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopDetailViewController.m; path = Resources/ShopsAndExhibitions/Shops/ViewController/HokutosaiShopDetailViewController.m; sourceTree = "<group>"; };
+		A7B54D98191BCDF100113E6F /* noimage_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage_1.png; sourceTree = "<group>"; };
+		A7B54D9A191DF49F00113E6F /* HokutosaiContestsEntrysTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiContestsEntrysTableViewCell.h; path = Resources/Contests/View/HokutosaiContestsEntrysTableViewCell.h; sourceTree = "<group>"; };
+		A7B54D9B191DF49F00113E6F /* HokutosaiContestsEntrysTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiContestsEntrysTableViewCell.m; path = Resources/Contests/View/HokutosaiContestsEntrysTableViewCell.m; sourceTree = "<group>"; };
+		A7B54D9F191EA48300113E6F /* crown_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown_60.png; sourceTree = "<group>"; };
+		A7B54DA1191EC52200113E6F /* HokutosaiContestsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiContestsTableViewCell.h; path = Resources/Contests/View/HokutosaiContestsTableViewCell.h; sourceTree = "<group>"; };
+		A7B54DA2191EC52200113E6F /* HokutosaiContestsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiContestsTableViewCell.m; path = Resources/Contests/View/HokutosaiContestsTableViewCell.m; sourceTree = "<group>"; };
+		A7B54DA8191F42D500113E6F /* HokutosaiContestsEntrysListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiContestsEntrysListViewController.h; path = Resources/Contests/EntrysList/ViewController/HokutosaiContestsEntrysListViewController.h; sourceTree = "<group>"; };
+		A7B54DA9191F42D500113E6F /* HokutosaiContestsEntrysListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiContestsEntrysListViewController.m; path = Resources/Contests/EntrysList/ViewController/HokutosaiContestsEntrysListViewController.m; sourceTree = "<group>"; };
+		A7B54DAB191F6B9B00113E6F /* HokutosaiContestsEntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiContestsEntryDetailViewController.h; path = Resources/Contests/Detail/ViewController/HokutosaiContestsEntryDetailViewController.h; sourceTree = "<group>"; };
+		A7B54DAC191F6B9B00113E6F /* HokutosaiContestsEntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiContestsEntryDetailViewController.m; path = Resources/Contests/Detail/ViewController/HokutosaiContestsEntryDetailViewController.m; sourceTree = "<group>"; };
+		A7B54DAE1921326200113E6F /* HokutosaiEventsNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiEventsNotification.h; path = Resources/Events/HokutosaiEventsNotification.h; sourceTree = "<group>"; };
+		A7B54DAF1921326200113E6F /* HokutosaiEventsNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiEventsNotification.m; path = Resources/Events/HokutosaiEventsNotification.m; sourceTree = "<group>"; };
+		A7B54DB31923A1CA00113E6F /* HokutosaiMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiMapsViewController.h; path = Resources/Others/ViewController/HokutosaiMapsViewController.h; sourceTree = "<group>"; };
+		A7B54DB41923A1CA00113E6F /* HokutosaiMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiMapsViewController.m; path = Resources/Others/ViewController/HokutosaiMapsViewController.m; sourceTree = "<group>"; };
+		A7B5DB661925164800EA73CE /* map1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map1.png; sourceTree = "<group>"; };
+		A7B5DB681925173800EA73CE /* map2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map2.png; sourceTree = "<group>"; };
+		A7B5DB691925173800EA73CE /* map3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map3.png; sourceTree = "<group>"; };
+		A7B61B44190CFD1900C93E31 /* HokutosaiURLImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiURLImageDownloader.h; path = "Resources/Common/Hokutosai API/HokutosaiURLImageDownloader.h"; sourceTree = "<group>"; };
+		A7B61B45190CFD1900C93E31 /* HokutosaiURLImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiURLImageDownloader.m; path = "Resources/Common/Hokutosai API/HokutosaiURLImageDownloader.m"; sourceTree = "<group>"; };
+		A7B61B4B190D0E8A00C93E31 /* HokutosaiURLImagesCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiURLImagesCache.h; path = Resources/Common/Web/HokutosaiURLImagesCache.h; sourceTree = "<group>"; };
+		A7B61B4C190D0E8A00C93E31 /* HokutosaiURLImagesCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiURLImagesCache.m; path = Resources/Common/Web/HokutosaiURLImagesCache.m; sourceTree = "<group>"; };
+		A7B6BF3418F060E1004B53BB /* HokutosaiNewsTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiNewsTimelineView.h; path = Resources/News/View/HokutosaiNewsTimelineView.h; sourceTree = "<group>"; };
+		A7B6BF3518F060E1004B53BB /* HokutosaiNewsTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiNewsTimelineView.m; path = Resources/News/View/HokutosaiNewsTimelineView.m; sourceTree = "<group>"; };
+		A7B6BF3718F06183004B53BB /* HokutosaiNewsTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiNewsTimelineCell.h; path = Resources/News/View/HokutosaiNewsTimelineCell.h; sourceTree = "<group>"; };
+		A7B6BF3818F06183004B53BB /* HokutosaiNewsTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiNewsTimelineCell.m; path = Resources/News/View/HokutosaiNewsTimelineCell.m; sourceTree = "<group>"; };
+		A7B6BF3E18F14EC6004B53BB /* HokutosaiShopsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopsTableViewCell.h; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsTableViewCell.h; sourceTree = "<group>"; };
+		A7B6BF3F18F14EC6004B53BB /* HokutosaiShopsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsTableViewCell.m; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsTableViewCell.m; sourceTree = "<group>"; };
+		A7B6BF4118F15143004B53BB /* HokutosaiShopsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HokutosaiShopsTableViewCell.xib; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsTableViewCell.xib; sourceTree = "<group>"; };
+		A7CCDFFA18FD8924000250D0 /* HokutosaiUIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiUIUtility.h; path = "Resources/Common/User Interface/Utility/HokutosaiUIUtility.h"; sourceTree = "<group>"; };
+		A7CCDFFB18FD8924000250D0 /* HokutosaiUIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiUIUtility.m; path = "Resources/Common/User Interface/Utility/HokutosaiUIUtility.m"; sourceTree = "<group>"; };
+		A7CCE00918FEB009000250D0 /* HokutosaiShopsMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopsMenuItem.h; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsMenuItem.h; sourceTree = "<group>"; };
+		A7CCE00A18FEB009000250D0 /* HokutosaiShopsMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsMenuItem.m; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsMenuItem.m; sourceTree = "<group>"; };
+		A7CCE01219000B57000250D0 /* HokutosaiShopsAssessStarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopsAssessStarButton.h; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsAssessStarButton.h; sourceTree = "<group>"; };
+		A7CCE01319000B57000250D0 /* HokutosaiShopsAssessStarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsAssessStarButton.m; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsAssessStarButton.m; sourceTree = "<group>"; };
+		A7CCE01519000FCB000250D0 /* HokutosaiShopsAssessByMeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiShopsAssessByMeView.h; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsAssessByMeView.h; sourceTree = "<group>"; };
+		A7CCE01619000FCB000250D0 /* HokutosaiShopsAssessByMeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsAssessByMeView.m; path = Resources/ShopsAndExhibitions/Shops/View/HokutosaiShopsAssessByMeView.m; sourceTree = "<group>"; };
+		A7CCE0191902416A000250D0 /* HokutosaiTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiTimer.h; path = Resources/Common/Utility/HokutosaiTimer.h; sourceTree = "<group>"; };
+		A7CCE01A1902416A000250D0 /* HokutosaiTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiTimer.m; path = Resources/Common/Utility/HokutosaiTimer.m; sourceTree = "<group>"; };
+		A7CCE0251903C1C2000250D0 /* HokutosaiHeaderedContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiHeaderedContentView.h; path = "Resources/Common/User Interface/View/HokutosaiHeaderedContentView.h"; sourceTree = "<group>"; };
+		A7CCE0261903C1C2000250D0 /* HokutosaiHeaderedContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiHeaderedContentView.m; path = "Resources/Common/User Interface/View/HokutosaiHeaderedContentView.m"; sourceTree = "<group>"; };
+		A7CCE0281903D4F1000250D0 /* HokutosaiHeaderedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiHeaderedLabel.h; path = "Resources/Common/User Interface/View/HokutosaiHeaderedLabel.h"; sourceTree = "<group>"; };
+		A7CCE0291903D4F1000250D0 /* HokutosaiHeaderedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiHeaderedLabel.m; path = "Resources/Common/User Interface/View/HokutosaiHeaderedLabel.m"; sourceTree = "<group>"; };
+		A7CCE02B1903D5D8000250D0 /* HokutosaiStackPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiStackPanel.h; path = "Resources/Common/User Interface/View/HokutosaiStackPanel.h"; sourceTree = "<group>"; };
+		A7CCE02C1903D5D8000250D0 /* HokutosaiStackPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiStackPanel.m; path = "Resources/Common/User Interface/View/HokutosaiStackPanel.m"; sourceTree = "<group>"; };
+		A7CCE031190566A7000250D0 /* HokutosaiStackPanelScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiStackPanelScrollView.h; path = "Resources/Common/User Interface/View/HokutosaiStackPanelScrollView.h"; sourceTree = "<group>"; };
+		A7CCE032190566A7000250D0 /* HokutosaiStackPanelScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiStackPanelScrollView.m; path = "Resources/Common/User Interface/View/HokutosaiStackPanelScrollView.m"; sourceTree = "<group>"; };
+		A7CCE0341907C36D000250D0 /* HokutosaiStreamingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiStreamingLabel.h; path = "Resources/Common/User Interface/View/HokutosaiStreamingLabel.h"; sourceTree = "<group>"; };
+		A7CCE0351907C36D000250D0 /* HokutosaiStreamingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiStreamingLabel.m; path = "Resources/Common/User Interface/View/HokutosaiStreamingLabel.m"; sourceTree = "<group>"; };
+		A7CCE07B190A9D4E000250D0 /* HokutosaiWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiWebViewController.h; path = "Resources/Common/User Interface/View Controller/HokutosaiWebViewController.h"; sourceTree = "<group>"; };
+		A7CCE07C190A9D4E000250D0 /* HokutosaiWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiWebViewController.m; path = "Resources/Common/User Interface/View Controller/HokutosaiWebViewController.m"; sourceTree = "<group>"; };
+		A7CCE07F190B7D5E000250D0 /* HokutosaiLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiLoadingView.h; path = "Resources/Common/User Interface/View/HokutosaiLoadingView.h"; sourceTree = "<group>"; };
+		A7CCE080190B7D5E000250D0 /* HokutosaiLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiLoadingView.m; path = "Resources/Common/User Interface/View/HokutosaiLoadingView.m"; sourceTree = "<group>"; };
+		A7D0623418F5AD8A00578E01 /* HokutosaiURLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiURLUtility.h; path = "Resources/Common/Hokutosai API/HokutosaiURLUtility.h"; sourceTree = "<group>"; };
+		A7D0623518F5AD8A00578E01 /* HokutosaiURLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiURLUtility.m; path = "Resources/Common/Hokutosai API/HokutosaiURLUtility.m"; sourceTree = "<group>"; };
+		A7D0623718F5ADB300578E01 /* HokutosaiApiGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiApiGetRequest.h; path = "Resources/Common/Hokutosai API/HokutosaiApiGetRequest.h"; sourceTree = "<group>"; };
+		A7D0623818F5ADB300578E01 /* HokutosaiApiGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiApiGetRequest.m; path = "Resources/Common/Hokutosai API/HokutosaiApiGetRequest.m"; sourceTree = "<group>"; };
+		A7D0623A18F5ADCF00578E01 /* HokutosaiApiPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiApiPostRequest.h; path = "Resources/Common/Hokutosai API/HokutosaiApiPostRequest.h"; sourceTree = "<group>"; };
+		A7D0623B18F5ADCF00578E01 /* HokutosaiApiPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiApiPostRequest.m; path = "Resources/Common/Hokutosai API/HokutosaiApiPostRequest.m"; sourceTree = "<group>"; };
+		A7D0624818FA35F300578E01 /* HokutosaiApiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiApiRequest.h; path = "Resources/Common/Hokutosai API/HokutosaiApiRequest.h"; sourceTree = "<group>"; };
+		A7D0624918FA35F300578E01 /* HokutosaiApiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiApiRequest.m; path = "Resources/Common/Hokutosai API/HokutosaiApiRequest.m"; sourceTree = "<group>"; };
+		A7D0624B18FA4D3B00578E01 /* HokutosaiApiRequestDemander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiApiRequestDemander.h; path = "Resources/Common/Hokutosai API/HokutosaiApiRequestDemander.h"; sourceTree = "<group>"; };
+		A7D0624C18FA4D3B00578E01 /* HokutosaiApiRequestDemander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiApiRequestDemander.m; path = "Resources/Common/Hokutosai API/HokutosaiApiRequestDemander.m"; sourceTree = "<group>"; };
+		A7D0625118FA9F3400578E01 /* HokutosaiApiRequestParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiApiRequestParameters.h; path = "Resources/Common/Hokutosai API/HokutosaiApiRequestParameters.h"; sourceTree = "<group>"; };
+		A7D0625218FA9F3400578E01 /* HokutosaiApiRequestParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiApiRequestParameters.m; path = "Resources/Common/Hokutosai API/HokutosaiApiRequestParameters.m"; sourceTree = "<group>"; };
+		A7D0625818FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiExhibitionsTableViewCell.h; path = Resources/ShopsAndExhibitions/Exhibitions/View/HokutosaiExhibitionsTableViewCell.h; sourceTree = "<group>"; };
+		A7D0625918FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiExhibitionsTableViewCell.m; path = Resources/ShopsAndExhibitions/Exhibitions/View/HokutosaiExhibitionsTableViewCell.m; sourceTree = "<group>"; };
+		A7D0625A18FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HokutosaiExhibitionsTableViewCell.xib; path = Resources/ShopsAndExhibitions/Exhibitions/View/HokutosaiExhibitionsTableViewCell.xib; sourceTree = "<group>"; };
+		A7D4E8C2190D5945001F1AA7 /* star_fill.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = star_fill.bmp; sourceTree = "<group>"; };
+		A7D4E8C3190D5945001F1AA7 /* star_frame.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = star_frame.bmp; sourceTree = "<group>"; };
+		A7D4E8CD190D7ADC001F1AA7 /* HokutosaiNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiNewsDetailViewController.h; path = Resources/News/Detail/ViewController/HokutosaiNewsDetailViewController.h; sourceTree = "<group>"; };
+		A7D4E8CE190D7ADC001F1AA7 /* HokutosaiNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiNewsDetailViewController.m; path = Resources/News/Detail/ViewController/HokutosaiNewsDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A762A79718EDDF84009E858A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A762A7A018EDDF84009E858A /* CoreGraphics.framework in Frameworks */,
+				A762A7A218EDDF84009E858A /* UIKit.framework in Frameworks */,
+				A762A79E18EDDF84009E858A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A762A7BB18EDDF84009E858A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A762A7C018EDDF84009E858A /* XCTest.framework in Frameworks */,
+				A762A7C218EDDF84009E858A /* UIKit.framework in Frameworks */,
+				A762A7C118EDDF84009E858A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A762A79118EDDF84009E858A = {
+			isa = PBXGroup;
+			children = (
+				A762A7A318EDDF84009E858A /* Hokutosai */,
+				A762A7C518EDDF84009E858A /* HokutosaiTests */,
+				A762A79C18EDDF84009E858A /* Frameworks */,
+				A762A79B18EDDF84009E858A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A762A79B18EDDF84009E858A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A762A79A18EDDF84009E858A /* hokutosai2014.app */,
+				A762A7BE18EDDF84009E858A /* HokutosaiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A762A79C18EDDF84009E858A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A762A79D18EDDF84009E858A /* Foundation.framework */,
+				A762A79F18EDDF84009E858A /* CoreGraphics.framework */,
+				A762A7A118EDDF84009E858A /* UIKit.framework */,
+				A762A7BF18EDDF84009E858A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A762A7A318EDDF84009E858A /* Hokutosai */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE33451911B2DF00BB265E /* Files */,
+				A7ADDBF118EF1E8400ECE3C8 /* Images */,
+				A762A7F118EDE9B0009E858A /* Resources */,
+				A762A7AC18EDDF84009E858A /* HokutosaiAppDelegate.h */,
+				A762A7AD18EDDF84009E858A /* HokutosaiAppDelegate.m */,
+				A762A7AF18EDDF84009E858A /* Main.storyboard */,
+				A762A7B818EDDF84009E858A /* Images.xcassets */,
+				A762A7A418EDDF84009E858A /* Supporting Files */,
+			);
+			path = Hokutosai;
+			sourceTree = "<group>";
+		};
+		A762A7A418EDDF84009E858A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A762A7A518EDDF84009E858A /* Hokutosai-Info.plist */,
+				A762A7A618EDDF84009E858A /* InfoPlist.strings */,
+				A762A7A918EDDF84009E858A /* main.m */,
+				A762A7AB18EDDF84009E858A /* Hokutosai-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A762A7C518EDDF84009E858A /* HokutosaiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A762A7CB18EDDF84009E858A /* HokutosaiTests.m */,
+				A762A7C618EDDF84009E858A /* Supporting Files */,
+			);
+			path = HokutosaiTests;
+			sourceTree = "<group>";
+		};
+		A762A7C618EDDF84009E858A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A762A7C718EDDF84009E858A /* HokutosaiTests-Info.plist */,
+				A762A7C818EDDF84009E858A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A762A7E518EDE5D7009E858A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A7D4E8CA190D7A4A001F1AA7 /* Detail */,
+				A7ADDBED18EF19C600ECE3C8 /* View */,
+				A762A7F018EDE70A009E858A /* ViewController */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		A762A7E618EDE5EF009E858A /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				A762A7EF18EDE6EA009E858A /* ViewController */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+		A762A7E718EDE616009E858A /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE335619123D3400BB265E /* Detail */,
+				A7AE3348191205CB00BB265E /* Schedules */,
+				A7B54DAE1921326200113E6F /* HokutosaiEventsNotification.h */,
+				A7B54DAF1921326200113E6F /* HokutosaiEventsNotification.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		A762A7E818EDE634009E858A /* ShopsAndExhibitions */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D8B1919365500113E6F /* View */,
+				A762A7EC18EDE6A6009E858A /* Exhibitions */,
+				A762A7EB18EDE69B009E858A /* Shops */,
+				A762A7EA18EDE687009E858A /* ViewController */,
+			);
+			name = ShopsAndExhibitions;
+			sourceTree = "<group>";
+		};
+		A762A7E918EDE662009E858A /* Contests */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54DA6191F426E00113E6F /* Detail */,
+				A7B54DA4191F424900113E6F /* EntrysList */,
+				A762A7F318EDEB94009E858A /* View */,
+				A762A7ED18EDE6C9009E858A /* ViewController */,
+			);
+			name = Contests;
+			sourceTree = "<group>";
+		};
+		A762A7EA18EDE687009E858A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A762A80018EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.h */,
+				A762A80118EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A762A7EB18EDE69B009E858A /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+				A7B6BF4318F1BD04004B53BB /* ViewController */,
+				A7B6BF3C18F121EC004B53BB /* View */,
+			);
+			name = Shops;
+			sourceTree = "<group>";
+		};
+		A762A7EC18EDE6A6009E858A /* Exhibitions */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0625418FAC1CF00578E01 /* ViewController */,
+				A7B6BF3D18F121F7004B53BB /* View */,
+			);
+			name = Exhibitions;
+			sourceTree = "<group>";
+		};
+		A762A7ED18EDE6C9009E858A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A762A80318EDED13009E858A /* HokutosaiContestsViewController.h */,
+				A762A80418EDED13009E858A /* HokutosaiContestsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A762A7EE18EDE6DB009E858A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE33351911210000BB265E /* HokutosaiSchedulesViewController.h */,
+				A7AE33361911210000BB265E /* HokutosaiSchedulesViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A762A7EF18EDE6EA009E858A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A762A7FA18EDECA1009E858A /* HokutosaiTwitterViewController.h */,
+				A762A7FB18EDECA1009E858A /* HokutosaiTwitterViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A762A7F018EDE70A009E858A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A762A7F718EDEC68009E858A /* HokutosaiNewsViewController.h */,
+				A762A7F818EDEC68009E858A /* HokutosaiNewsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A762A7F118EDE9B0009E858A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE333A1911391400BB265E /* Others */,
+				A762A7F218EDEB41009E858A /* Common */,
+				A762A7E918EDE662009E858A /* Contests */,
+				A762A7E818EDE634009E858A /* ShopsAndExhibitions */,
+				A762A7E718EDE616009E858A /* Events */,
+				A762A7E618EDE5EF009E858A /* Twitter */,
+				A762A7E518EDE5D7009E858A /* News */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A762A7F218EDEB41009E858A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A7B61B47190D009C00C93E31 /* Web */,
+				A7CCE01819024109000250D0 /* Utility */,
+				A762A7F618EDEC20009E858A /* Hokutosai API */,
+				A762A7F418EDEBB8009E858A /* User Interface */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		A762A7F318EDEB94009E858A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D9A191DF49F00113E6F /* HokutosaiContestsEntrysTableViewCell.h */,
+				A7B54D9B191DF49F00113E6F /* HokutosaiContestsEntrysTableViewCell.m */,
+				A7B54DA1191EC52200113E6F /* HokutosaiContestsTableViewCell.h */,
+				A7B54DA2191EC52200113E6F /* HokutosaiContestsTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A762A7F418EDEBB8009E858A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D7E19156F2900113E6F /* Gesture */,
+				A7ADDBDF18EEA89E00ECE3C8 /* Utility */,
+				A762A7F518EDEC04009E858A /* View */,
+				A7CCE07E190A9DAD000250D0 /* View Controller */,
+				A7B54D88191880C800113E6F /* HokutosaiViewControllerProtocol.h */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		A762A7F518EDEC04009E858A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADDBE318EEBBAD00ECE3C8 /* HokutosaiSwipeView.h */,
+				A7ADDBE418EEBBAD00ECE3C8 /* HokutosaiSwipeView.m */,
+				A7ADDBE718EEBBF800ECE3C8 /* HokutosaiSwipeBord.h */,
+				A7ADDBE818EEBBF800ECE3C8 /* HokutosaiSwipeBord.m */,
+				A7CCE0251903C1C2000250D0 /* HokutosaiHeaderedContentView.h */,
+				A7CCE0261903C1C2000250D0 /* HokutosaiHeaderedContentView.m */,
+				A7CCE0281903D4F1000250D0 /* HokutosaiHeaderedLabel.h */,
+				A7CCE0291903D4F1000250D0 /* HokutosaiHeaderedLabel.m */,
+				A7CCE02B1903D5D8000250D0 /* HokutosaiStackPanel.h */,
+				A7CCE02C1903D5D8000250D0 /* HokutosaiStackPanel.m */,
+				A7CCE031190566A7000250D0 /* HokutosaiStackPanelScrollView.h */,
+				A7CCE032190566A7000250D0 /* HokutosaiStackPanelScrollView.m */,
+				A7CCE0341907C36D000250D0 /* HokutosaiStreamingLabel.h */,
+				A7CCE0351907C36D000250D0 /* HokutosaiStreamingLabel.m */,
+				A7CCE07F190B7D5E000250D0 /* HokutosaiLoadingView.h */,
+				A7CCE080190B7D5E000250D0 /* HokutosaiLoadingView.m */,
+				A7AE332A190F8EEC00BB265E /* HokutosaiStackPanelView.h */,
+				A7AE332B190F8EEC00BB265E /* HokutosaiStackPanelView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A762A7F618EDEC20009E858A /* Hokutosai API */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0623718F5ADB300578E01 /* HokutosaiApiGetRequest.h */,
+				A7D0623818F5ADB300578E01 /* HokutosaiApiGetRequest.m */,
+				A7D0623A18F5ADCF00578E01 /* HokutosaiApiPostRequest.h */,
+				A7D0623B18F5ADCF00578E01 /* HokutosaiApiPostRequest.m */,
+				A7D0624818FA35F300578E01 /* HokutosaiApiRequest.h */,
+				A7D0624918FA35F300578E01 /* HokutosaiApiRequest.m */,
+				A7D0624B18FA4D3B00578E01 /* HokutosaiApiRequestDemander.h */,
+				A7D0624C18FA4D3B00578E01 /* HokutosaiApiRequestDemander.m */,
+				A7D0625118FA9F3400578E01 /* HokutosaiApiRequestParameters.h */,
+				A7D0625218FA9F3400578E01 /* HokutosaiApiRequestParameters.m */,
+				A7B54D851917D53200113E6F /* HokutosaiApiRequestTasksQueue.h */,
+				A7B54D861917D53200113E6F /* HokutosaiApiRequestTasksQueue.m */,
+			);
+			name = "Hokutosai API";
+			sourceTree = "<group>";
+		};
+		A7ADDBDF18EEA89E00ECE3C8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADDBEA18EEBCA200ECE3C8 /* HokutosaiUIColor.h */,
+				A7ADDBEB18EEBCA200ECE3C8 /* HokutosaiUIColor.m */,
+				A7CCDFFA18FD8924000250D0 /* HokutosaiUIUtility.h */,
+				A7CCDFFB18FD8924000250D0 /* HokutosaiUIUtility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		A7ADDBED18EF19C600ECE3C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADDBF418EF2F7400ECE3C8 /* HokutosaiNewsTopicsBordContent.h */,
+				A7ADDBF518EF2F7400ECE3C8 /* HokutosaiNewsTopicsBordContent.m */,
+				A7B6BF3418F060E1004B53BB /* HokutosaiNewsTimelineView.h */,
+				A7B6BF3518F060E1004B53BB /* HokutosaiNewsTimelineView.m */,
+				A7B6BF3718F06183004B53BB /* HokutosaiNewsTimelineCell.h */,
+				A7B6BF3818F06183004B53BB /* HokutosaiNewsTimelineCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7ADDBF118EF1E8400ECE3C8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54DB61923B01300113E6F /* Maps */,
+				A7B54D98191BCDF100113E6F /* noimage_1.png */,
+				A7B54D72191515F600113E6F /* TRY.png */,
+				A7D0624E18FA8C0300578E01 /* Icon */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A7AE333A1911391400BB265E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE333B1911392900BB265E /* ViewController */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A7AE333B1911392900BB265E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE333F1911399A00BB265E /* HokutosaiOthersViewController.h */,
+				A7AE33401911399A00BB265E /* HokutosaiOthersViewController.m */,
+				A7AE33421911B1ED00BB265E /* HokutosaiCopyrightInformationViewController.h */,
+				A7AE33431911B1ED00BB265E /* HokutosaiCopyrightInformationViewController.m */,
+				A7B54DB31923A1CA00113E6F /* HokutosaiMapsViewController.h */,
+				A7B54DB41923A1CA00113E6F /* HokutosaiMapsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A7AE33451911B2DF00BB265E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE33461911B37C00BB265E /* copyrights.txt */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		A7AE3348191205CB00BB265E /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE335519123D1E00BB265E /* View */,
+				A762A7EE18EDE6DB009E858A /* ViewController */,
+			);
+			name = Schedules;
+			sourceTree = "<group>";
+		};
+		A7AE335519123D1E00BB265E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE335719124CA000BB265E /* HokutosaiSchedulesTimeAxis.h */,
+				A7AE335819124CA000BB265E /* HokutosaiSchedulesTimeAxis.m */,
+				A7AE336A1913861F00BB265E /* HokutosaiSchedulesTimetableItem.h */,
+				A7AE336B1913861F00BB265E /* HokutosaiSchedulesTimetableItem.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7AE335619123D3400BB265E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D7A1915598000113E6F /* ViewController */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		A7B54D7A1915598000113E6F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D7B191559D400113E6F /* HokutosaiEventsDetailViewController.h */,
+				A7B54D7C191559D400113E6F /* HokutosaiEventsDetailViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A7B54D7E19156F2900113E6F /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D821915709800113E6F /* HokutosaiTaggedTapGestureRecognizer.h */,
+				A7B54D831915709800113E6F /* HokutosaiTaggedTapGestureRecognizer.m */,
+			);
+			name = Gesture;
+			sourceTree = "<group>";
+		};
+		A7B54D8B1919365500113E6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D8C191936E600113E6F /* HokutosaiShopsAndExhibitionsHeadInfoView.h */,
+				A7B54D8D191936E600113E6F /* HokutosaiShopsAndExhibitionsHeadInfoView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7B54DA4191F424900113E6F /* EntrysList */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54DA5191F426000113E6F /* ViewController */,
+			);
+			name = EntrysList;
+			sourceTree = "<group>";
+		};
+		A7B54DA5191F426000113E6F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54DA8191F42D500113E6F /* HokutosaiContestsEntrysListViewController.h */,
+				A7B54DA9191F42D500113E6F /* HokutosaiContestsEntrysListViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A7B54DA6191F426E00113E6F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54DA7191F427800113E6F /* ViewController */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		A7B54DA7191F427800113E6F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54DAB191F6B9B00113E6F /* HokutosaiContestsEntryDetailViewController.h */,
+				A7B54DAC191F6B9B00113E6F /* HokutosaiContestsEntryDetailViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A7B54DB61923B01300113E6F /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				A7B5DB681925173800EA73CE /* map2.png */,
+				A7B5DB691925173800EA73CE /* map3.png */,
+				A7B5DB661925164800EA73CE /* map1.png */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		A7B61B47190D009C00C93E31 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				A7B61B45190CFD1900C93E31 /* HokutosaiURLImageDownloader.m */,
+				A7B61B44190CFD1900C93E31 /* HokutosaiURLImageDownloader.h */,
+				A7D0623518F5AD8A00578E01 /* HokutosaiURLUtility.m */,
+				A7D0623418F5AD8A00578E01 /* HokutosaiURLUtility.h */,
+				A7B61B4B190D0E8A00C93E31 /* HokutosaiURLImagesCache.h */,
+				A7B61B4C190D0E8A00C93E31 /* HokutosaiURLImagesCache.m */,
+				A7B54D771915497300113E6F /* HokutosaiURLImagesDictionary.h */,
+				A7B54D781915497300113E6F /* HokutosaiURLImagesDictionary.m */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		A7B6BF3C18F121EC004B53BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7B6BF3E18F14EC6004B53BB /* HokutosaiShopsTableViewCell.h */,
+				A7B6BF3F18F14EC6004B53BB /* HokutosaiShopsTableViewCell.m */,
+				A7B6BF4118F15143004B53BB /* HokutosaiShopsTableViewCell.xib */,
+				A7CCE00918FEB009000250D0 /* HokutosaiShopsMenuItem.h */,
+				A7CCE00A18FEB009000250D0 /* HokutosaiShopsMenuItem.m */,
+				A7CCE01219000B57000250D0 /* HokutosaiShopsAssessStarButton.h */,
+				A7CCE01319000B57000250D0 /* HokutosaiShopsAssessStarButton.m */,
+				A7CCE01519000FCB000250D0 /* HokutosaiShopsAssessByMeView.h */,
+				A7CCE01619000FCB000250D0 /* HokutosaiShopsAssessByMeView.m */,
+				A7B54D9219195F8200113E6F /* HokutosaiShopsAssessView.h */,
+				A7B54D9319195F8200113E6F /* HokutosaiShopsAssessView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7B6BF3D18F121F7004B53BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0625818FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.h */,
+				A7D0625918FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.m */,
+				A7D0625A18FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7B6BF4318F1BD04004B53BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D951919779600113E6F /* HokutosaiShopDetailViewController.h */,
+				A7B54D961919779600113E6F /* HokutosaiShopDetailViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A7CCE01819024109000250D0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A7CCE0191902416A000250D0 /* HokutosaiTimer.h */,
+				A7CCE01A1902416A000250D0 /* HokutosaiTimer.m */,
+				A7AE3330190FEA8300BB265E /* HokutosaiDateConvert.h */,
+				A7AE3331190FEA8300BB265E /* HokutosaiDateConvert.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		A7CCE07E190A9DAD000250D0 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7CCE07B190A9D4E000250D0 /* HokutosaiWebViewController.h */,
+				A7CCE07C190A9D4E000250D0 /* HokutosaiWebViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		A7D0624E18FA8C0300578E01 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D9F191EA48300113E6F /* crown_60.png */,
+				A7B54D681913F01900113E6F /* clock_white.png */,
+				A7AE336619137E7100BB265E /* other.png */,
+				A7D4E8C2190D5945001F1AA7 /* star_fill.bmp */,
+				A7D4E8C3190D5945001F1AA7 /* star_frame.bmp */,
+			);
+			name = Icon;
+			sourceTree = "<group>";
+		};
+		A7D0625418FAC1CF00578E01 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7B54D8F19194AAE00113E6F /* HokutosaiExhibitionDetailViewController.h */,
+				A7B54D9019194AAE00113E6F /* HokutosaiExhibitionDetailViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A7D4E8CA190D7A4A001F1AA7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A7D4E8CC190D7A79001F1AA7 /* View */,
+				A7D4E8CB190D7A66001F1AA7 /* ViewController */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		A7D4E8CB190D7A66001F1AA7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7D4E8CD190D7ADC001F1AA7 /* HokutosaiNewsDetailViewController.h */,
+				A7D4E8CE190D7ADC001F1AA7 /* HokutosaiNewsDetailViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A7D4E8CC190D7A79001F1AA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A762A79918EDDF84009E858A /* Hokutosai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A762A7CF18EDDF84009E858A /* Build configuration list for PBXNativeTarget "Hokutosai" */;
+			buildPhases = (
+				A762A79618EDDF84009E858A /* Sources */,
+				A762A79718EDDF84009E858A /* Frameworks */,
+				A762A79818EDDF84009E858A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hokutosai;
+			productName = Hokutosai;
+			productReference = A762A79A18EDDF84009E858A /* hokutosai2014.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A762A7BD18EDDF84009E858A /* HokutosaiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A762A7D218EDDF84009E858A /* Build configuration list for PBXNativeTarget "HokutosaiTests" */;
+			buildPhases = (
+				A762A7BA18EDDF84009E858A /* Sources */,
+				A762A7BB18EDDF84009E858A /* Frameworks */,
+				A762A7BC18EDDF84009E858A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A762A7C418EDDF84009E858A /* PBXTargetDependency */,
+			);
+			name = HokutosaiTests;
+			productName = HokutosaiTests;
+			productReference = A762A7BE18EDDF84009E858A /* HokutosaiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A762A79218EDDF84009E858A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Hokutosai;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Shuka Takakuma";
+				TargetAttributes = {
+					A762A7BD18EDDF84009E858A = {
+						TestTargetID = A762A79918EDDF84009E858A;
+					};
+				};
+			};
+			buildConfigurationList = A762A79518EDDF84009E858A /* Build configuration list for PBXProject "Hokutosai" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A762A79118EDDF84009E858A;
+			productRefGroup = A762A79B18EDDF84009E858A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A762A79918EDDF84009E858A /* Hokutosai */,
+				A762A7BD18EDDF84009E858A /* HokutosaiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A762A79818EDDF84009E858A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A762A7B918EDDF84009E858A /* Images.xcassets in Resources */,
+				A7B54DA0191EA48300113E6F /* crown_60.png in Resources */,
+				A7AE336819137E7100BB265E /* other.png in Resources */,
+				A7B5DB6A1925173800EA73CE /* map2.png in Resources */,
+				A7B54D691913F01900113E6F /* clock_white.png in Resources */,
+				A7B6BF4218F15143004B53BB /* HokutosaiShopsTableViewCell.xib in Resources */,
+				A7B54D73191515F600113E6F /* TRY.png in Resources */,
+				A7D4E8C5190D5945001F1AA7 /* star_frame.bmp in Resources */,
+				A762A7A818EDDF84009E858A /* InfoPlist.strings in Resources */,
+				A7AE33471911B37C00BB265E /* copyrights.txt in Resources */,
+				A7B5DB671925164800EA73CE /* map1.png in Resources */,
+				A7B54D99191BCDF100113E6F /* noimage_1.png in Resources */,
+				A762A7B118EDDF84009E858A /* Main.storyboard in Resources */,
+				A7D4E8C4190D5945001F1AA7 /* star_fill.bmp in Resources */,
+				A7B5DB6B1925173800EA73CE /* map3.png in Resources */,
+				A7D0625C18FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A762A7BC18EDDF84009E858A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A762A7CA18EDDF84009E858A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A762A79618EDDF84009E858A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AE33411911399A00BB265E /* HokutosaiOthersViewController.m in Sources */,
+				A7CCDFFC18FD8924000250D0 /* HokutosaiUIUtility.m in Sources */,
+				A7B54DB01921326200113E6F /* HokutosaiEventsNotification.m in Sources */,
+				A7AE336C1913861F00BB265E /* HokutosaiSchedulesTimetableItem.m in Sources */,
+				A7B6BF3618F060E1004B53BB /* HokutosaiNewsTimelineView.m in Sources */,
+				A762A7FC18EDECA1009E858A /* HokutosaiTwitterViewController.m in Sources */,
+				A7ADDBEC18EEBCA200ECE3C8 /* HokutosaiUIColor.m in Sources */,
+				A7ADDBE518EEBBAD00ECE3C8 /* HokutosaiSwipeView.m in Sources */,
+				A762A80218EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m in Sources */,
+				A7B54D8E191936E600113E6F /* HokutosaiShopsAndExhibitionsHeadInfoView.m in Sources */,
+				A7CCE01419000B57000250D0 /* HokutosaiShopsAssessStarButton.m in Sources */,
+				A7D0624D18FA4D3B00578E01 /* HokutosaiApiRequestDemander.m in Sources */,
+				A7B54DAD191F6B9B00113E6F /* HokutosaiContestsEntryDetailViewController.m in Sources */,
+				A7B6BF4018F14EC6004B53BB /* HokutosaiShopsTableViewCell.m in Sources */,
+				A7CCE033190566A7000250D0 /* HokutosaiStackPanelScrollView.m in Sources */,
+				A7B54DB51923A1CA00113E6F /* HokutosaiMapsViewController.m in Sources */,
+				A7B61B46190CFD1900C93E31 /* HokutosaiURLImageDownloader.m in Sources */,
+				A762A7AE18EDDF84009E858A /* HokutosaiAppDelegate.m in Sources */,
+				A762A80518EDED13009E858A /* HokutosaiContestsViewController.m in Sources */,
+				A762A7AA18EDDF84009E858A /* main.m in Sources */,
+				A7AE3332190FEA8300BB265E /* HokutosaiDateConvert.m in Sources */,
+				A7B54DAA191F42D500113E6F /* HokutosaiContestsEntrysListViewController.m in Sources */,
+				A7ADDBE918EEBBF800ECE3C8 /* HokutosaiSwipeBord.m in Sources */,
+				A7AE335919124CA000BB265E /* HokutosaiSchedulesTimeAxis.m in Sources */,
+				A7B61B4D190D0E8A00C93E31 /* HokutosaiURLImagesCache.m in Sources */,
+				A7D0623C18F5ADCF00578E01 /* HokutosaiApiPostRequest.m in Sources */,
+				A7B54D7D191559D400113E6F /* HokutosaiEventsDetailViewController.m in Sources */,
+				A7CCE01719000FCB000250D0 /* HokutosaiShopsAssessByMeView.m in Sources */,
+				A7D4E8CF190D7ADC001F1AA7 /* HokutosaiNewsDetailViewController.m in Sources */,
+				A7CCE01B1902416A000250D0 /* HokutosaiTimer.m in Sources */,
+				A7B54D9419195F8200113E6F /* HokutosaiShopsAssessView.m in Sources */,
+				A7B54D791915497300113E6F /* HokutosaiURLImagesDictionary.m in Sources */,
+				A7B6BF3918F06183004B53BB /* HokutosaiNewsTimelineCell.m in Sources */,
+				A7AE33371911210000BB265E /* HokutosaiSchedulesViewController.m in Sources */,
+				A7D0625B18FACF6400578E01 /* HokutosaiExhibitionsTableViewCell.m in Sources */,
+				A7B54D841915709800113E6F /* HokutosaiTaggedTapGestureRecognizer.m in Sources */,
+				A7B54DA3191EC52200113E6F /* HokutosaiContestsTableViewCell.m in Sources */,
+				A7B54D871917D53200113E6F /* HokutosaiApiRequestTasksQueue.m in Sources */,
+				A7ADDBF618EF2F7400ECE3C8 /* HokutosaiNewsTopicsBordContent.m in Sources */,
+				A762A7F918EDEC68009E858A /* HokutosaiNewsViewController.m in Sources */,
+				A7D0624A18FA35F300578E01 /* HokutosaiApiRequest.m in Sources */,
+				A7CCE0361907C36D000250D0 /* HokutosaiStreamingLabel.m in Sources */,
+				A7B54D971919779600113E6F /* HokutosaiShopDetailViewController.m in Sources */,
+				A7AE332C190F8EEC00BB265E /* HokutosaiStackPanelView.m in Sources */,
+				A7CCE07D190A9D4E000250D0 /* HokutosaiWebViewController.m in Sources */,
+				A7CCE081190B7D5E000250D0 /* HokutosaiLoadingView.m in Sources */,
+				A7AE33441911B1ED00BB265E /* HokutosaiCopyrightInformationViewController.m in Sources */,
+				A7CCE0271903C1C2000250D0 /* HokutosaiHeaderedContentView.m in Sources */,
+				A7D0623618F5AD8A00578E01 /* HokutosaiURLUtility.m in Sources */,
+				A7B54D9D191DF49F00113E6F /* HokutosaiContestsEntrysTableViewCell.m in Sources */,
+				A7D0623918F5ADB300578E01 /* HokutosaiApiGetRequest.m in Sources */,
+				A7B54D9119194AAE00113E6F /* HokutosaiExhibitionDetailViewController.m in Sources */,
+				A7CCE02A1903D4F1000250D0 /* HokutosaiHeaderedLabel.m in Sources */,
+				A7D0625318FA9F3400578E01 /* HokutosaiApiRequestParameters.m in Sources */,
+				A7CCE02D1903D5D8000250D0 /* HokutosaiStackPanel.m in Sources */,
+				A7CCE00B18FEB009000250D0 /* HokutosaiShopsMenuItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A762A7BA18EDDF84009E858A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A762A7CC18EDDF84009E858A /* HokutosaiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A762A7C418EDDF84009E858A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A762A79918EDDF84009E858A /* Hokutosai */;
+			targetProxy = A762A7C318EDDF84009E858A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A762A7A618EDDF84009E858A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A762A7A718EDDF84009E858A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A762A7AF18EDDF84009E858A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A762A7B018EDDF84009E858A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A762A7C818EDDF84009E858A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A762A7C918EDDF84009E858A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A762A7CD18EDDF84009E858A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A762A7CE18EDDF84009E858A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A762A7D018EDDF84009E858A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hokutosai/Hokutosai-Prefix.pch";
+				INFOPLIST_FILE = "Hokutosai/Hokutosai-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = hokutosai2014;
+				PROVISIONING_PROFILE = "A0044B1E-C03B-4B41-851D-E45E04973571";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A762A7D118EDDF84009E858A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shuka Takakuma (UCX35CL26E)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hokutosai/Hokutosai-Prefix.pch";
+				INFOPLIST_FILE = "Hokutosai/Hokutosai-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = hokutosai2014;
+				PROVISIONING_PROFILE = "A0044B1E-C03B-4B41-851D-E45E04973571";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A762A7D318EDDF84009E858A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hokutosai.app/Hokutosai";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hokutosai/Hokutosai-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HokutosaiTests/HokutosaiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A762A7D418EDDF84009E858A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hokutosai.app/Hokutosai";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hokutosai/Hokutosai-Prefix.pch";
+				INFOPLIST_FILE = "HokutosaiTests/HokutosaiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		A7B5DB6C1926B78200EA73CE /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		A7B5DB6D1926B78200EA73CE /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shuka Takakuma (UCX35CL26E)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hokutosai/Hokutosai-Prefix.pch";
+				INFOPLIST_FILE = "Hokutosai/Hokutosai-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = hokutosai2014;
+				PROVISIONING_PROFILE = "A0044B1E-C03B-4B41-851D-E45E04973571";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		A7B5DB6E1926B78200EA73CE /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hokutosai.app/Hokutosai";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hokutosai/Hokutosai-Prefix.pch";
+				INFOPLIST_FILE = "HokutosaiTests/HokutosaiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A762A79518EDDF84009E858A /* Build configuration list for PBXProject "Hokutosai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A762A7CD18EDDF84009E858A /* Debug */,
+				A762A7CE18EDDF84009E858A /* Release */,
+				A7B5DB6C1926B78200EA73CE /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A762A7CF18EDDF84009E858A /* Build configuration list for PBXNativeTarget "Hokutosai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A762A7D018EDDF84009E858A /* Debug */,
+				A762A7D118EDDF84009E858A /* Release */,
+				A7B5DB6D1926B78200EA73CE /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A762A7D218EDDF84009E858A /* Build configuration list for PBXNativeTarget "HokutosaiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A762A7D318EDDF84009E858A /* Debug */,
+				A762A7D418EDDF84009E858A /* Release */,
+				A7B5DB6E1926B78200EA73CE /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A762A79218EDDF84009E858A /* Project object */;
+}

@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8YX-ce-x5E">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller - Foundation-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController title="Foundation" automaticallyAdjustsScrollViewInsets="NO" id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dtV-Cj-OBd" kind="relationship" relationship="viewControllers" id="Qr2-a4-w3x"/>
+                        <segue destination="6yq-TU-WYF" kind="relationship" relationship="viewControllers" id="g9x-5t-DFf"/>
+                        <segue destination="mlH-Hv-0RT" kind="relationship" relationship="viewControllers" id="C8v-Ba-aHi"/>
+                        <segue destination="Gsz-oO-2QB" kind="relationship" relationship="viewControllers" id="JHh-5K-Wxu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+        <!--Navigation Controller - News-->
+        <scene sceneID="H08-JO-PZO">
+            <objects>
+                <navigationController title="News" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="dtV-Cj-OBd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ニュース" image="News" id="e5c-Z4-LtT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jp2-RQ-kBC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uBU-2O-InY" kind="relationship" relationship="rootViewController" id="OTc-sr-qpA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysF-bm-DTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="-1355"/>
+        </scene>
+        <!--Hokutosai News View Controller - News Root-->
+        <scene sceneID="y7q-Wu-zlA">
+            <objects>
+                <viewController title="News Root" automaticallyAdjustsScrollViewInsets="NO" id="uBU-2O-InY" customClass="HokutosaiNewsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KxU-y0-FAk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="NQ9-0F-g5O" userLabel="Topics Bord" customClass="HokutosaiSwipeBord">
+                                <rect key="frame" x="0.0" y="64" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cXu-7n-Gab" appends="YES" id="Chc-aD-D9K"/>
+                                </connections>
+                            </scrollView>
+                            <view contentMode="scaleToFill" id="kNl-gO-jUo" userLabel="News Tilmeline Header">
+                                <rect key="frame" x="0.0" y="192" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lsu-nd-a90" userLabel="Label - Section Label">
+                                        <rect key="frame" x="20" y="3" width="280" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="COU-3r-nXr">
+                                        <rect key="frame" x="141" y="13" width="39" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="qez-7H-iWm" userLabel="News Timeline Swipe View" customClass="HokutosaiSwipeView">
+                                <rect key="frame" x="0.0" y="232" width="320" height="336"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ニュース" id="ZEc-qx-pSU">
+                        <barButtonItem key="backBarButtonItem" title=" " id="zRP-vT-DCb"/>
+                        <barButtonItem key="leftBarButtonItem" image="other.png" id="xXn-KM-hDL">
+                            <color key="tintColor" red="1" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Usa-vf-BVd" kind="modal" id="AdP-We-Gs1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="newsTimelineHeader" destination="kNl-gO-jUo" id="gho-aM-vG7"/>
+                        <outlet property="newsTimelineSwipeView" destination="qez-7H-iWm" id="ZNZ-4i-Kl4"/>
+                        <outlet property="newsTimelineSwipeViewPageControl" destination="COU-3r-nXr" id="miD-BL-OnC"/>
+                        <outlet property="newsTimelineSwipeViewSectionLabel" destination="Lsu-nd-a90" id="t9t-Rz-dlb"/>
+                        <outlet property="topicsBord" destination="NQ9-0F-g5O" id="ZHN-Hi-W4q"/>
+                        <segue destination="Uxj-gh-HSf" kind="push" identifier="toWebView" id="xha-MR-qjt"/>
+                        <segue destination="90e-U3-Z6Y" kind="push" identifier="toNewsDetail" id="CfU-dZ-mUz"/>
+                        <segue destination="v1x-gd-PWT" kind="push" identifier="toEventDetail" id="ift-mG-L9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gl-wh-dVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cXu-7n-Gab" userLabel="Tap Gesture Recognizer - Topics">
+                    <connections>
+                        <action selector="tappedTopicsBord:" destination="uBU-2O-InY" id="3Y8-HQ-f4h"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1208" y="-1352"/>
+        </scene>
+        <!--Hokutosai Others View Controller - その他-->
+        <scene sceneID="cZF-Bv-ANW">
+            <objects>
+                <tableViewController id="3AQ-Dn-HSy" customClass="HokutosaiOthersViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Ds0-8o-Urr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="tM8-z5-EGW" detailTextLabel="BOt-GY-QnQ" style="IBUITableViewCellStyleValue1" id="Qtr-fj-EXb">
+                                <rect key="frame" x="0.0" y="119" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qtr-fj-EXb" id="seN-sD-rCv">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tM8-z5-EGW">
+                                            <rect key="frame" x="15" y="11" width="33" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BOt-GY-QnQ">
+                                            <rect key="frame" x="261" y="11" width="44" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3AQ-Dn-HSy" id="NOx-MK-2Yc"/>
+                            <outlet property="delegate" destination="3AQ-Dn-HSy" id="Uh6-Dq-UKa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="その他" id="j9J-eD-WRs">
+                        <barButtonItem key="backBarButtonItem" title=" " id="4bg-ON-nn1"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Uxj-gh-HSf" kind="push" identifier="toWebView" id="18G-lj-6yf"/>
+                        <segue destination="yDU-TZ-jxC" kind="push" identifier="toCopyrightInformation" id="pxK-Zp-hY9"/>
+                        <segue destination="0Ia-aw-Edk" kind="push" identifier="toMaps" id="0iR-yS-Nxe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHv-DX-Ksv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2277" y="-1717"/>
+        </scene>
+        <!--Hokutosai Copyright Information View Controller - 著作権情報-->
+        <scene sceneID="bID-uO-6hZ">
+            <objects>
+                <viewController id="yDU-TZ-jxC" customClass="HokutosaiCopyrightInformationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wZj-b6-aei">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ATV-aM-Svi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="著作権情報" id="7PA-Vv-uLx"/>
+                    <connections>
+                        <outlet property="textView" destination="ATV-aM-Svi" id="V05-5Z-WPT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="065-iU-VQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="-1939"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G5Y-nd-Qxx">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Usa-vf-BVd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="on3-RC-bnQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3AQ-Dn-HSy" kind="relationship" relationship="rootViewController" id="zgJ-7K-R6j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ii-vs-SLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="-1717"/>
+        </scene>
+        <!--Hokutosai Web View Controller - Web View-->
+        <scene sceneID="0Ls-6L-ams">
+            <objects>
+                <viewController title="Web View" id="Uxj-gh-HSf" customClass="HokutosaiWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Egh-we-LO5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="h9j-WO-jJ0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="esO-ot-w7D"/>
+                    <connections>
+                        <outlet property="webView" destination="h9j-WO-jJ0" id="k8o-z1-pzA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwk-FI-hfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="-1240"/>
+        </scene>
+        <!--Hokutosai Maps View Controller - Maps-->
+        <scene sceneID="Z0j-MD-iWs">
+            <objects>
+                <viewController title="Maps" automaticallyAdjustsScrollViewInsets="NO" id="0Ia-aw-Edk" customClass="HokutosaiMapsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t00-Ji-sbo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Soe-UW-sep">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="e6Y-qP-Znw">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y6c-YH-uI3">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Rbb-91-Hpl" userLabel="Bar Segmented Control - Floor">
+                            <rect key="frame" x="50" y="8" width="220" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="1階"/>
+                                <segment title="2階"/>
+                                <segment title="3・4階"/>
+                            </segments>
+                            <connections>
+                                <action selector="changeFloorSelectControl:" destination="0Ia-aw-Edk" eventType="valueChanged" id="Egp-W2-Rwe"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="e6Y-qP-Znw" id="1CD-tc-3j7"/>
+                        <outlet property="scrollView" destination="Soe-UW-sep" id="4hc-6o-tAV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ho5-Oe-84S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="-524"/>
+        </scene>
+        <!--Hokutosai News Detail View Controller - ニュース-->
+        <scene sceneID="ima-Uk-eGa">
+            <objects>
+                <tableViewController id="90e-U3-Z6Y" customClass="HokutosaiNewsDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KEn-kb-kwf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="90e-U3-Z6Y" id="iJT-Xo-c2z"/>
+                            <outlet property="delegate" destination="90e-U3-Z6Y" id="9Qw-Qn-BCu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ニュース" id="nJE-BA-RLE">
+                        <barButtonItem key="backBarButtonItem" title=" " id="UGY-WM-VV2"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="v1x-gd-PWT" kind="push" identifier="toEventDetail" id="4JR-l8-hvI"/>
+                        <segue destination="CnP-m3-LYh" kind="push" identifier="toExhibitionDetail" id="W6b-eS-DQL"/>
+                        <segue destination="Qga-nB-h59" kind="push" identifier="toShopDetail" id="Jfl-SY-twi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOR-MN-zpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="-976"/>
+        </scene>
+        <!--Navigation Controller - Schedule-->
+        <scene sceneID="kaH-ks-qdE">
+            <objects>
+                <navigationController title="Schedule" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="6yq-TU-WYF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="イベント" image="Schedule" id="Dxs-qX-6Xc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Gf-QC-ZWd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3CQ-ze-TLB" kind="relationship" relationship="rootViewController" id="t6z-6H-hvf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUl-Nq-tmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="180"/>
+        </scene>
+        <!--Hokutosai Schedules View Controller - Events Root-->
+        <scene sceneID="02Q-Dk-d8N">
+            <objects>
+                <viewController title="Events Root" automaticallyAdjustsScrollViewInsets="NO" id="3CQ-ze-TLB" customClass="HokutosaiSchedulesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0cz-6j-2pe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="n9P-Vg-UGI" userLabel="Hokutosai Swipe View - ScheduleTablesSwipeView" customClass="HokutosaiSwipeView">
+                                <rect key="frame" x="40" y="104" width="280" height="464"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="6bf-Qj-woc">
+                                <rect key="frame" x="0.0" y="104" width="40" height="464"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="104" maxX="0.0" maxY="49"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" id="aj7-5S-CC3" userLabel="View - Header">
+                                <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A1o-pw-9GR" userLabel="Label - Place">
+                                        <rect key="frame" x="60" y="5" width="240" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="GYb-pe-erq" userLabel="Page Control - Place">
+                                        <rect key="frame" x="161" y="12" width="39" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_white.png" id="X4K-ho-rbc" userLabel="Image View - Now Clock">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.15686274509803921" green="0.37254901960784315" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="IGw-Su-vm5" appends="YES" id="0e5-VF-7la"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oS5-My-g7s">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="WIa-XG-g27"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="SlX-2K-EvX">
+                            <rect key="frame" x="20" y="8" width="280" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="前夜祭"/>
+                                <segment title="1日目"/>
+                                <segment title="2日目"/>
+                            </segments>
+                            <connections>
+                                <action selector="changedDateSectionsControl:" destination="3CQ-ze-TLB" eventType="valueChanged" id="PL3-oy-Dnc"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateSectionsControl" destination="SlX-2K-EvX" id="cTe-64-VXT"/>
+                        <outlet property="headerView" destination="aj7-5S-CC3" id="Bcz-Be-qAX"/>
+                        <outlet property="placeLabel" destination="A1o-pw-9GR" id="S2Y-cZ-atL"/>
+                        <outlet property="placesPageControl" destination="GYb-pe-erq" id="TB6-ca-vCf"/>
+                        <outlet property="timeAxisScrollView" destination="6bf-Qj-woc" id="XR0-Fh-bpd"/>
+                        <outlet property="timetablesSwipeView" destination="n9P-Vg-UGI" id="szh-8M-feW"/>
+                        <segue destination="v1x-gd-PWT" kind="push" identifier="toEventsDetail" id="75D-gn-pVt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pu6-da-cal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="IGw-Su-vm5" userLabel="Tap Gesture Recognizer - Now Clock">
+                    <connections>
+                        <action selector="tappedNowButton:" destination="3CQ-ze-TLB" id="a4W-re-6eK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1215" y="180"/>
+        </scene>
+        <!--Hokutosai Events Detail View Controller - Events Detail-->
+        <scene sceneID="U7Z-cB-JDc">
+            <objects>
+                <tableViewController title="Events Detail" id="v1x-gd-PWT" customClass="HokutosaiEventsDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="obq-7S-prM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="v1x-gd-PWT" id="jB0-Y3-WAG"/>
+                            <outlet property="delegate" destination="v1x-gd-PWT" id="OFr-vO-O1G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="イベント" id="T1L-Mj-Ka3">
+                        <barButtonItem key="backBarButtonItem" title=" " id="VfI-9k-JfB"/>
+                        <barButtonItem key="rightBarButtonItem" id="xkd-wF-mGe">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eLu-Je-WWQ">
+                                <rect key="frame" x="269" y="5" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedMap:" destination="v1x-gd-PWT" eventType="touchUpInside" id="0vM-d1-fdg"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="0Ia-aw-Edk" kind="push" identifier="toMaps" id="XDv-dj-QPQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sm9-Oy-1IM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="-206"/>
+        </scene>
+        <!--Navigation Controller - ShopsAndExhibitions-->
+        <scene sceneID="5sO-WW-v00">
+            <objects>
+                <navigationController title="ShopsAndExhibitions" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="mlH-Hv-0RT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="模擬店・展示" image="ShopsAndExhibitions" id="00r-j9-HW0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8a3-Rw-3Gs">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NEX-M5-eau" kind="relationship" relationship="rootViewController" id="tEG-Pd-DHE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYW-nF-mUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="966"/>
+        </scene>
+        <!--Hokutosai Shops And Exhibitions View Controller - ShopsAndExhibitions Root-->
+        <scene sceneID="ggv-XE-yax">
+            <objects>
+                <viewController title="ShopsAndExhibitions Root" automaticallyAdjustsScrollViewInsets="NO" id="NEX-M5-eau" customClass="HokutosaiShopsAndExhibitionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1e9-U9-5Ke">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" bouncesZoom="NO" id="FHU-aw-HfD" customClass="HokutosaiSwipeView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rgc-FP-qKx">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="4Pd-wp-ap8"/>
+                        <view key="titleView" contentMode="scaleToFill" id="GL6-ci-aV8" userLabel="Header View">
+                            <rect key="frame" x="65" y="6" width="190" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模擬店" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o1X-hL-byx" userLabel="Label - Section Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="KnJ-jY-COe">
+                                    <rect key="frame" x="76" y="7" width="39" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </pageControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" id="fif-F5-V8M">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lom-hJ-dvG">
+                                <rect key="frame" x="269" y="5" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedMap:" destination="NEX-M5-eau" eventType="touchUpInside" id="BuK-OK-sdV"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="headerPageControl" destination="KnJ-jY-COe" id="mF7-j2-WYG"/>
+                        <outlet property="headerSectionLabel" destination="o1X-hL-byx" id="saK-cw-atK"/>
+                        <outlet property="headerView" destination="GL6-ci-aV8" id="G6v-Zj-KQh"/>
+                        <outlet property="swipeView" destination="FHU-aw-HfD" id="nya-Dg-d4D"/>
+                        <segue destination="CnP-m3-LYh" kind="push" identifier="toExhibitionDetail" id="gNb-ki-xbT"/>
+                        <segue destination="Qga-nB-h59" kind="push" identifier="toShopDetail" id="GRl-qb-cSr"/>
+                        <segue destination="0Ia-aw-Edk" kind="push" identifier="toMaps" id="CrO-V4-DEO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuk-ve-8Io" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1215" y="966"/>
+        </scene>
+        <!--Navigation Controller - Contests-->
+        <scene sceneID="SIa-uV-6rf">
+            <objects>
+                <navigationController title="Contests" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="Gsz-oO-2QB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="コンテスト" image="Contests" id="KLe-es-ZRs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7RC-bb-1Gm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jnR-ti-HLT" kind="relationship" relationship="rootViewController" id="kHv-FE-EPb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kz-92-nrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="2000"/>
+        </scene>
+        <!--Hokutosai Contests View Controller - Contests Root-->
+        <scene sceneID="OYh-Ow-aLy">
+            <objects>
+                <viewController title="Contests Root" automaticallyAdjustsScrollViewInsets="NO" id="jnR-ti-HLT" customClass="HokutosaiContestsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ID-1l-jWv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Laf-Uw-Eoe" customClass="HokutosaiSwipeView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7md-QQ-NpN">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="7Hu-WR-IWP"/>
+                        <view key="titleView" contentMode="scaleToFill" id="YAE-5A-JI7" userLabel="Header View">
+                            <rect key="frame" x="65" y="6" width="190" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コンテスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nHr-6C-k98" userLabel="Label - Page Name">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Mnh-Fj-KRS">
+                                    <rect key="frame" x="76" y="7" width="39" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </pageControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="headerLabel" destination="nHr-6C-k98" id="kRA-gb-vX0"/>
+                        <outlet property="headerPageControl" destination="Mnh-Fj-KRS" id="h2x-pc-Y4d"/>
+                        <outlet property="headerView" destination="YAE-5A-JI7" id="H4d-Mp-lJI"/>
+                        <outlet property="swipeView" destination="Laf-Uw-Eoe" id="0ED-2K-KtI"/>
+                        <segue destination="ANf-wI-gYl" kind="push" identifier="toEntrysList" id="4cI-h1-zkc"/>
+                        <segue destination="EKY-xN-sch" kind="push" identifier="toEntryDetail" id="Ajd-4h-61E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wU8-OJ-Zob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1215" y="2000"/>
+        </scene>
+        <!--Hokutosai Contests Entrys List View Controller - Entrys List-->
+        <scene sceneID="MYF-be-m6r">
+            <objects>
+                <tableViewController title="Entrys List" id="ANf-wI-gYl" customClass="HokutosaiContestsEntrysListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1PS-h5-9zi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ANf-wI-gYl" id="6mO-zW-zSZ"/>
+                            <outlet property="delegate" destination="ANf-wI-gYl" id="XMN-Kz-tQT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="a0C-Gc-Q1r">
+                        <barButtonItem key="backBarButtonItem" title=" " id="aoY-dN-xEe"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="EKY-xN-sch" kind="push" identifier="toEntryDetail" id="DeQ-q0-Mw4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDd-fP-tf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="2000"/>
+        </scene>
+        <!--Hokutosai Contests Entry Detail View Controller - Entry Detail-->
+        <scene sceneID="1Gg-Rb-kh9">
+            <objects>
+                <tableViewController title="Entry Detail" id="EKY-xN-sch" customClass="HokutosaiContestsEntryDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Z3J-a9-G2d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="EKY-xN-sch" id="8Lp-uJ-dxs"/>
+                            <outlet property="delegate" destination="EKY-xN-sch" id="SIU-4m-Nhm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="9Fa-Ph-wK7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIw-VL-d3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2277" y="2172"/>
+        </scene>
+        <!--Hokutosai Shop Detail View Controller - Shop Detail-->
+        <scene sceneID="WCw-a7-lHn">
+            <objects>
+                <tableViewController title="Shop Detail" id="Qga-nB-h59" customClass="HokutosaiShopDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7jz-cZ-ePy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Qga-nB-h59" id="tfx-2n-bm5"/>
+                            <outlet property="delegate" destination="Qga-nB-h59" id="gka-s1-5u2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="模擬店" id="GHt-fe-91F">
+                        <barButtonItem key="backBarButtonItem" title=" " id="lR6-TG-Y9C"/>
+                        <barButtonItem key="rightBarButtonItem" id="2Uy-hp-Wxy">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m1q-qP-Ikv">
+                                <rect key="frame" x="269" y="5" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedMap:" destination="Qga-nB-h59" eventType="touchUpInside" id="c74-Gc-LSf"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="0Ia-aw-Edk" kind="push" identifier="toMaps" id="ge9-fk-dGP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sge-tf-aNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1981" y="636"/>
+        </scene>
+        <!--Hokutosai Exhibition Detail View Controller - Exhibition Detail-->
+        <scene sceneID="pfj-uS-uvj">
+            <objects>
+                <tableViewController title="Exhibition Detail" id="CnP-m3-LYh" customClass="HokutosaiExhibitionDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PXz-PX-XMi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="CnP-m3-LYh" id="N1W-TC-TgP"/>
+                            <outlet property="delegate" destination="CnP-m3-LYh" id="EUF-Yq-Nh9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="展示" id="E5O-01-gC9">
+                        <barButtonItem key="backBarButtonItem" title=" " id="dgS-Xy-eau"/>
+                        <barButtonItem key="rightBarButtonItem" id="gX0-xO-wHW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vVd-u1-W0U">
+                                <rect key="frame" x="269" y="5" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedMap:" destination="CnP-m3-LYh" eventType="touchUpInside" id="lXR-YA-2HN"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="0Ia-aw-Edk" kind="push" identifier="toMaps" id="Erj-yR-91Q"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7t-WD-q0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1981" y="1308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Contests" width="30" height="30"/>
+        <image name="News" width="30" height="30"/>
+        <image name="Schedule" width="30" height="30"/>
+        <image name="ShopsAndExhibitions" width="30" height="30"/>
+        <image name="clock_white.png" width="60" height="60"/>
+        <image name="other.png" width="30" height="30"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="gNb-ki-xbT"/>
+        <segue reference="GRl-qb-cSr"/>
+        <segue reference="CrO-V4-DEO"/>
+        <segue reference="DeQ-q0-Mw4"/>
+        <segue reference="ift-mG-L9s"/>
+        <segue reference="xha-MR-qjt"/>
+    </inferredMetricsTieBreakers>
+</document>
