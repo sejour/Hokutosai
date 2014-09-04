@@ -24,6 +24,8 @@
 		A762A7FC18EDECA1009E858A /* HokutosaiTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A7FB18EDECA1009E858A /* HokutosaiTwitterViewController.m */; };
 		A762A80218EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A80118EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m */; };
 		A762A80518EDED13009E858A /* HokutosaiContestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A80418EDED13009E858A /* HokutosaiContestsViewController.m */; };
+		A798E0BE199F238800491A96 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A798E0BC199F238800491A96 /* LICENSE */; };
+		A798E0BF199F238800491A96 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A798E0BD199F238800491A96 /* README.md */; };
 		A7ADDBE518EEBBAD00ECE3C8 /* HokutosaiSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADDBE418EEBBAD00ECE3C8 /* HokutosaiSwipeView.m */; };
 		A7ADDBE918EEBBF800ECE3C8 /* HokutosaiSwipeBord.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADDBE818EEBBF800ECE3C8 /* HokutosaiSwipeBord.m */; };
 		A7ADDBEC18EEBCA200ECE3C8 /* HokutosaiUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADDBEB18EEBCA200ECE3C8 /* HokutosaiUIColor.m */; };
@@ -125,6 +127,8 @@
 		A762A80118EDECF3009E858A /* HokutosaiShopsAndExhibitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiShopsAndExhibitionsViewController.m; path = Resources/ShopsAndExhibitions/ViewController/HokutosaiShopsAndExhibitionsViewController.m; sourceTree = "<group>"; };
 		A762A80318EDED13009E858A /* HokutosaiContestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiContestsViewController.h; path = Resources/Contests/ViewController/HokutosaiContestsViewController.h; sourceTree = "<group>"; };
 		A762A80418EDED13009E858A /* HokutosaiContestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiContestsViewController.m; path = Resources/Contests/ViewController/HokutosaiContestsViewController.m; sourceTree = "<group>"; };
+		A798E0BC199F238800491A96 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A798E0BD199F238800491A96 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A7ADDBE318EEBBAD00ECE3C8 /* HokutosaiSwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiSwipeView.h; path = "Resources/Common/User Interface/View/HokutosaiSwipeView.h"; sourceTree = "<group>"; };
 		A7ADDBE418EEBBAD00ECE3C8 /* HokutosaiSwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HokutosaiSwipeView.m; path = "Resources/Common/User Interface/View/HokutosaiSwipeView.m"; sourceTree = "<group>"; };
 		A7ADDBE718EEBBF800ECE3C8 /* HokutosaiSwipeBord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HokutosaiSwipeBord.h; path = "Resources/Common/User Interface/View/HokutosaiSwipeBord.h"; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 		A762A79118EDDF84009E858A = {
 			isa = PBXGroup;
 			children = (
+				A798E0BC199F238800491A96 /* LICENSE */,
+				A798E0BD199F238800491A96 /* README.md */,
 				A762A7A318EDDF84009E858A /* Hokutosai */,
 				A762A7C518EDDF84009E858A /* HokutosaiTests */,
 				A762A79C18EDDF84009E858A /* Frameworks */,
@@ -909,8 +915,10 @@
 				A7B5DB6A1925173800EA73CE /* map2.png in Resources */,
 				A7B54D691913F01900113E6F /* clock_white.png in Resources */,
 				A7B6BF4218F15143004B53BB /* HokutosaiShopsTableViewCell.xib in Resources */,
+				A798E0BF199F238800491A96 /* README.md in Resources */,
 				A7B54D73191515F600113E6F /* TRY.png in Resources */,
 				A7D4E8C5190D5945001F1AA7 /* star_frame.bmp in Resources */,
+				A798E0BE199F238800491A96 /* LICENSE in Resources */,
 				A762A7A818EDDF84009E858A /* InfoPlist.strings in Resources */,
 				A7AE33471911B37C00BB265E /* copyrights.txt in Resources */,
 				A7B5DB671925164800EA73CE /* map1.png in Resources */,
