@@ -8,4 +8,4 @@
 ※現在サーバが稼働しておらず、アプリを起動してもコンテンツを取得することはできません。
 
 ## 関連リンク
-- [Hokutosai App 2016 for iOS](https://github.com/sejour/Hokutosai)
+- [Hokutosai App 2016 for iOS](https://github.com/sejour/Hokutosai-iOS)
